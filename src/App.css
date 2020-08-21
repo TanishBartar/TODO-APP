@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+.App{
+  display:grid ;
+  place-items: center;
+  background-color: #dadbd3;
+  height: 100vh;
+  
+}
+.Appbody{
+  margin-top: 20px;
+  display: flex;
+  height: 90vh;
+  width: 90vw;
+  overflow: scroll;
+  background-color: #ededed ;
+  
+}
+.sidebar{
+  width: 350px;
+  border-right: 1px solid lightgray;
+  position: sticky;
+  left: 10;
+}
+.sidebar__header{
+
+  background-color: #3485e4;
+  height: 60px;
+  padding-top: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.sidebar__meetingname{
+  color: white;
+  font-weight: 200;
+  margin-top: 3px;
+  margin-left: 10px ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user{
+  height: 38px;
+  width: 100%;
+  margin-bottom: 40px;
 }
+.users__h1{
+  font-weight: 200;
+  margin-left: 10px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.user__name{
+  font-weight: 200;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+.user{
+  display: flex;
+  align-items: center;
+}
+.avatar123{
+  margin-left: 10px;
+}
+.chatpage{
+}
+.chatheader__h1{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-weight: 200;
+}
+.chatheader{
+  height: 60px;
+  border-bottom: 1px solid lightgray;
+}
+.chatpage{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.chatmessage{
+  position: relative;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #3485e4;
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: 40px;
+  margin-bottom: 40px;
   color: white;
+  border-radius: 10px;
 }
+.chatmessagename{
+  position: absolute;
+  top: -20px;
+  color: black;
+  margin-left: -5px;
+  font-size: 14px;
 
-.App-link {
-  color: #61dafb;
 }
+.inputmessage{
+ margin-left: 40px;
+ width: 430px;
+ height: 44px;
+ border: 1px solid lightgray;
+ border-radius: 10px;
+ margin-top: 380px;
+ font-size: large;
+ 
+}
+.chatfooter{
+  display: flex;
+  align-items: center;
+  position: sticky;
+  bottom: 40px;
+}
+.sendicon{
+  margin-top: 380px;
+  margin-left: 16px;
+  color: #3485e4;
+}
+.usernameinput{
+  margin-top: 180px;
+  margin-left: 450px;
+  width: 400px;
+  height: 44px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-size: larger;
+}
+.meetingnameinput{
+  margin-top: 30px;
+  margin-left: 450px;
+  width: 400px;
+  height: 44px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-size: larger;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.meetingpassword{
+  margin-top: 30px;
+  margin-left: 450px;
+  width: 400px;
+  height: 44px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-size: larger;
+
+}
+.saveprofile{
+  background-color: #3485e4;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid #3485e4;
+  border-radius: 10px;
+  color: white;
+  margin-left: 450px;
+  margin-top: 20px;
+}
+.join{
+  background-color: #3485e4;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 40px;
+  padding-right: 40px;
+  width: 200px;
+  border: 1px solid #3485e4;
+  border-radius: 90px;
+  color: white;
+  margin-left: 560px;
+  margin-top: 50px;
+
 }
